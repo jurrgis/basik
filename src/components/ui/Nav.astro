@@ -1,0 +1,18 @@
+---
+const { links, classes } = Astro.props
+
+interface Link {
+    url: string
+    title: string
+}
+---
+
+<nav class={`flex gap-4 ${classes ?? classes}`}>
+    {
+        links.map((link: Link) => (
+            <a class="hover:underline" href={link.url}>
+                {link.title}
+            </a>
+        ))
+    }
+</nav>

@@ -1,0 +1,7 @@
+---
+import { Image } from "astro:assets"
+import logo from "@/assets/logo.svg"
+import mainConfig from "@/config/main.json"
+---
+
+<Image src={logo} alt={`${mainConfig.title} logo`} />

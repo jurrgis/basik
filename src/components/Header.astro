@@ -1,0 +1,10 @@
+---
+import headerMenu from "@/config/header_menu.json"
+import Logo from "@/components/ui/Logo.astro"
+import Nav from "./ui/Nav.astro"
+---
+
+<header class="flex justify-between items-center px-8 py-4 text-sm">
+	<Logo />
+	<Nav links={headerMenu.links} />
+</header>

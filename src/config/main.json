@@ -1,0 +1,29 @@
+{
+  "website_title": "Basik CMS",
+  "pages": [
+    {
+      "title": "Home",
+      "description": "Home page sososo",
+      "keywords": "Home, Basik CMS, Astro, Strapi, CMS, Boilerplate",
+      "url": "/"
+    },
+    {
+      "title": "About",
+      "description": "About page sososo",
+      "keywords": "About, Basik CMS, Astro, Strapi, CMS, Boilerplate",
+      "url": "/about"
+    },
+    {
+      "title": "Contact",
+      "description": "Contact page sososo",
+      "keywords": "Contact, Basik CMS, Astro, Strapi, CMS, Boilerplate",
+      "url": "/contact"
+    },
+    {
+      "title": "Privacy policy",
+      "description": "Privacy policy page sososo",
+      "keywords": "Privacy policy, Basik CMS, Astro, Strapi, CMS, Boilerplate",
+      "url": "/privacy-policy"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+---
+import "@/assets/style/main.css"
+import config from "@/config/main.json"
+import Header from "@/components/Header.astro"
+import Footer from "@/components/Footer.astro"
+
+const { website_title } = config
+const pageConfig = config.pages.find((page) => page.url === Astro.url.pathname)
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		{
+			pageConfig && pageConfig.description && (
+				<meta name="description" content={pageConfig.description} />
+			)
+		}
+		{
+			pageConfig && pageConfig.keywords && (
+				<meta name="keywords" content={pageConfig.keywords} />
+			)
+		}
+		{
+			pageConfig && pageConfig.title && website_title ? (
+				<title>
+					{website_title} {`| ${pageConfig.title}`}
+				</title>
+			) : (
+				<title>{website_title}</title>
+			)
+		}
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	</head>
+	<body class="mx-auto max-w-screen-xl">
+		<Header />
+		<main class="px-8 py-4">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

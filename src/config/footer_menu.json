@@ -1,0 +1,16 @@
+{
+    "links": [
+        {
+            "title": "Privacy Policy",
+            "url": "/privacy-policy"
+        },
+        {
+            "title": "Terms of Service",
+            "url": "/terms-of-service"
+        },
+        {
+            "title": "Contact",
+            "url": "/contact"
+        }
+    ]
+}

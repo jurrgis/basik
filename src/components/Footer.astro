@@ -1,0 +1,13 @@
+---
+import footerMenu from "../config/footer_menu.json"
+import mainConfig from "../config/main.json"
+import Nav from "./ui/Nav.astro"
+---
+
+<footer class="items-center gap-4 grid px-8 py-4 text-sm">
+    <Nav links={footerMenu.links} classes="justify-center" />
+    <div class="text-xs text-center">
+        All rights reserved &copy; {new Date().getFullYear()}
+        {mainConfig.website_title}
+    </div>
+</footer>
